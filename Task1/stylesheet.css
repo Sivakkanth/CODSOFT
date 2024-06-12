@@ -508,19 +508,20 @@
     display: none;
 }
 
-.service-list div{
+.service-containers{
     width: 100%;
     display: grid;
-    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    grid-template-columns: 250px 250px 250px;
     grid-gap: 20px;
     padding: 10px;
     flex: none;
 }
 
 .service-container{
-    width: 250px;
+    width: 100%;
     transition: transform 0.5s;
-    height: 300px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -534,6 +535,7 @@
     background-size: cover;
     background-origin: padding-box;
     background-clip: border-box;
+    transform: scale(1.2);
 }
 
 #p2{
@@ -573,9 +575,11 @@
 }
 
 .service-container h1{
-    background: linear-gradient(to bottom, #2aa4ea4f, #09344df5);
+    background: linear-gradient(to bottom, #2aa4ea91, #09344d);
     text-align: center;
-    padding: 35% 20%;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 50% 20%;
     color: #fff;
     height: 100%;
 }
@@ -607,8 +611,289 @@
     border-radius: 30px;
 }
 
+#pr1{
+    height: 75vh;
+}
+
+#pr2{
+    height: 75vh;
+    display: none;
+}
+
+#pr3{
+    height: 75vh;
+    display: none;
+}
+
+#pr4{
+    height: 75vh;
+    display: none;
+}
+
+#pr5{
+    height: 75vh;
+    display: none;
+}
+
+#youtube-text{
+    width: 35%;
+}
+
+.about-youtube{
+    width: 55%;
+    height: 66vh;
+    margin-block: 5%;
+    z-index: 1;
+    border-left: 50px solid #2388c3;
+    border-bottom: 10px solid #2388c3;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 70px;
+}
+
+.design{
+    width: 50%;
+    height: 80px;
+    z-index: 3;
+    margin-top: -15px;
+    position: absolute;
+    background-color: #2388c3;
+    border-bottom-right-radius: 30pc;
+}
+
+.my-youtube{
+    padding: 50px 10%;
+    position: absolute;
+    right: 0;
+    width: 65%;
+    height: 80vh;
+}
+
+.pricing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    padding: 30px 10%;
+}
+
+.pricing h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.pricing h6{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 10px 0px;
+}
+
+.packages{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.package{
+    background-color: rgba(28, 178, 25, 0.1);
+    border: 1px solid #02484675;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    width: auto;
+    margin-inline: 50px;
+}
+
+.package h2{
+    padding: 20px;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+}
+
+.package-name{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.package-name h3{
+    font-size: 20px;
+    padding: 15px 30px;
+    border: 1px solid #02484675;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+}
+
+#basic{
+    background-color: rgba(28, 178, 25, 1);
+    transform: scaleY(1.2);
+}
+
+#standard{
+    background-color: rgba(0, 21, 255, 1);
+}
+
+#premium{
+    background-color: rgba(255, 156, 41, 1);
+}
+
+#mbasic{
+    background-color: rgba(28, 178, 25, 1);
+    transform: scaleY(1.2);
+}
+
+#mstandard{
+    background-color: rgba(0, 21, 255, 1);
+}
+
+#mpremium{
+    background-color: rgba(255, 156, 41, 1);
+}
+
+#silver{
+    display: flex;
+}
+
+#msilver{
+    display: flex;
+}
+
+.package-description{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.package-price{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 30px;
+}
+
+.package-price h4{
+    font-size: 20px;
+}
+
+.package-price h6{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 800;
+    background-color: rgba(28, 178, 25, 0.7);
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 1px 2px 3px 4px rgba(27, 178, 25, 0.3);
+}
+
+.delivery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 30px;
+}
+
+.delivery-details{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.delivery-details i{
+    font-size: 25px;
+    font-size: 600;
+}
+
+.delivery-details h5{
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.package-features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0px 10px 10px 30px;
+}
+
+#wrong{
+    color: red;
+}
+
+.package-feature{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.package-features i{
+    font-size: 30px;
+    font-weight: 600;
+    color: green;
+}
+
+.package-feature p{
+    font-size: 18px;
+    color: #0000009f;
+}
+
+.package a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #000000;
+    padding: 10px 100px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 30px;
+    margin-block: 20px;
+}
+
+.package a i{
+    font-size: 20px;
+    vertical-align: middle;
+    margin-left: 70px;
+    position: absolute;
+}
+
+.package a:hover{
+    transform: scale(1.1);
+}
+
+.package span{
+    font-size: 15px;
+    padding: 0px 0px 20px 0px;
+}
+
 .logo-main{
     padding: 60px 10%;
+    margin-bottom: 50px;
     background: #09344d0c;
 }
 
@@ -760,4 +1045,95 @@ form textarea{
     padding: 15px 10px;
     font-size: 15px;
     border-radius: 10px;
+}
+
+.to-top{
+  background: black;
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .4s;
+}
+
+.to-top.active{
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.to-contact{
+  background: rgb(9, 0, 105);
+  position: fixed;
+  bottom: 16px;
+  left: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #fff;
+  text-decoration: none;
+  transition: all .4s;
+  cursor: pointer;
+}
+
+.to-chat{
+  background: rgb(0, 137, 9);
+  position: fixed;
+  bottom: 80px;
+  left: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all .4s;
+}
+
+#chat{
+  position: fixed;
+  bottom: 30px;
+  left: 100px;
+  transition: all .4s;
+  z-index: 100;
+  border-radius: 40px;
+  display: none;
+}
+
+#in{
+    display: flex;
+    visibility: hidden;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+label{
+    cursor: pointer;
+    z-index: 100;
+}
+
+label div{
+    background-color: antiquewhite;
+}
+
+input:checked ~ #chat{
+    display: flex;
 }
